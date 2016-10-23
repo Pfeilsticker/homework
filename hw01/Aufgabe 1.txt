@@ -1,0 +1,32 @@
+Aufgabe 1
+Generics
+In jedem komplexen Softwarprojekt schleichen sich fehler ein. Runtime bugs können oft nur schwer erkannt werden. Generics helfen dabei diese zu verhindern.
+
+Why Use Generics?
+Bei Generics können types als Parameter von Klassen Methoden und Interfaes verwedet werden. Dadurch kann der Code besseer wiederverwendet werden.
+
+Generic Types
+Bei einer Generic Klasse werden die type Parameter mit großen einzelnen buchstaben in einer <> Klammer angegeben. 
+
+Type Parameter sind das T in Foo<T>. Type Argument ist das String in Foo<String>.
+
+Raw Types
+Raw Types sind Generic Klassen ohne type Argumente. 
+Werden diese Klassen verwendet, müsssen type Argumente angegeben werdten, da es sonst oft Errors gibt.
+
+Generic Methodes
+Änlich wie bei Klassen ist es auch möglich Generic Metheoden zu erstellen.
+
+Boundet Type
+Es ist möglich ein type Prameter auf verschiedene Typen einzuschränken. z.B. wenn Zahlen verglichen werden.
+Dies wird z.B. <T extends Numbers> in der <> Klammer mit dem Schlüsselwort extends gemacht.
+Es können auch mehrere  Typen an einen type Parameter gebunden werden. Bsp: <T extends Intege & Float>
+
+
+
+
+public interface Pair<K, V> {
+    public K getKey();
+    public V getValue();
+}
+
